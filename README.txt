@@ -1,0 +1,1 @@
+My first fully completed game. The game is based on the original snake, you can play it alone or together, choose skins or upload your own, there are different game modes, as well as falling bombs.

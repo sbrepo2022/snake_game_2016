@@ -1,0 +1,95 @@
+#include "defines2.h"
+
+icon ICON pictures\\special\\ksnake.ico
+picture_back BITMAP pictures\\special\\picture_back.bmp
+picture_back2 BITMAP pictures\\special\\picture_back2.bmp
+picture_back_mask BITMAP pictures\\special\\picture_back_mask.bmp
+
+//объекты окна меню
+picture_play BITMAP pictures\\main_menu\\picture_play.bmp
+picture_settings BITMAP pictures\\main_menu\\picture_settings.bmp
+picture_help BITMAP pictures\\main_menu\\picture_help.bmp
+picture_credits BITMAP pictures\\main_menu\\picture_credits.bmp
+picture_exit BITMAP pictures\\main_menu\\picture_exit.bmp
+picture_snake BITMAP pictures\\main_menu\\snake.bmp
+picture_snake2 BITMAP pictures\\main_menu\\snake2.bmp
+
+//объекты окна игры
+button_pause BITMAP pictures\\play\\pause.bmp
+button_play BITMAP pictures\\play\\play.bmp
+button_pause_mask BITMAP pictures\\play\\pause_mask.bmp
+
+//объекты окна настроек
+picture_ok BITMAP pictures\\settings\\button_ok.bmp
+picture_cancel BITMAP pictures\\settings\\button_cancel.bmp
+
+/*“старевшие
+picture_green BITMAP pictures\\settings\\Green.bmp
+picture_blue BITMAP pictures\\settings\\Blue.bmp
+picture_yellow BITMAP pictures\\settings\\Yellow.bmp
+picture_red BITMAP pictures\\settings\\Red.bmp
+picture_violet BITMAP pictures\\settings\\Violet.bmp
+picture_orange BITMAP pictures\\settings\\Orange.bmp
+picture_usert BITMAP pictures\\settings\\UserT.bmp
+*/
+
+picture_one BITMAP pictures\\settings\\One.bmp
+picture_two BITMAP pictures\\settings\\Two.bmp
+picture_three BITMAP pictures\\settings\\Three.bmp
+
+picture_wasd BITMAP pictures\\settings\\wasd.bmp
+picture_uldr BITMAP pictures\\settings\\uldr.bmp
+
+picture_arrow BITMAP pictures\\settings\\arrow.bmp
+picture_arrow2 BITMAP pictures\\settings\\arrow2.bmp
+
+//объекты окна помощи
+
+//объекты окна создателей
+credits_list BITMAP pictures\\credits\\credits_list.bmp
+SBstudio BITMAP pictures\\credits\\SBstudio.bmp
+
+//объекты змейки
+snake_t_a BITMAP pictures\\snake\\snake_t_a.bmp
+snake_t_b BITMAP pictures\\snake\\snake_t_b.bmp
+snake_t_c BITMAP pictures\\snake\\snake_t_c.bmp
+snake_t_d BITMAP pictures\\snake\\snake_t_d.bmp
+snake_t_e BITMAP pictures\\snake\\snake_t_e.bmp
+snake_t_f BITMAP pictures\\snake\\snake_t_f.bmp
+
+wall_a BITMAP pictures\\snake\\wall_a.bmp
+apple_a BITMAP pictures\\snake\\apple_a.bmp
+goldapple_a BITMAP pictures\\snake\\goldapple_a.bmp
+bomb_a BITMAP pictures\\snake\\bomb_a.bmp
+bomb_mask BITMAP pictures\\snake\\bomb_mask.bmp
+detonate BITMAP pictures\\snake\\detonate.bmp
+
+//объекты меню выбора режима
+picture_classic BITMAP pictures\\play_menu\\picture_classic.bmp
+picture_advanced BITMAP pictures\\play_menu\\picture_advanced.bmp
+picture_time BITMAP pictures\\play_menu\\picture_time.bmp
+picture_custom BITMAP pictures\\play_menu\\picture_custom.bmp
+picture_settingm BITMAP pictures\\play_menu\\picture_settingm.bmp
+p1 BITMAP pictures\\play_menu\\p1.bmp
+p2 BITMAP pictures\\play_menu\\p2.bmp
+
+CustomMenu MENU
+BEGIN
+  POPUP "Карта"
+  BEGIN
+    MENUITEM "Создать", CMD_NEW
+    MENUITEM "Загрузить", CMD_LOAD
+    MENUITEM "Сохранить", CMD_SAVE
+    MENUITEM SEPARATOR
+    MENUITEM "Очистить", CMD_CLEAR
+  END
+  
+  POPUP "Инструменты"
+  BEGIN
+    MENUITEM "По точкам", CMD_PIXEL
+    MENUITEM "Ручка", CMD_PEN
+    MENUITEM "Ластик", CMD_RUBBER
+  END
+  
+  MENUITEM "Играть", CMD_PLAY
+END
